@@ -1,0 +1,23 @@
+<template>
+  <div id="app">
+    <img src="./assets/logo.png">
+    <router-link :to="{ name: 'Home' }">Home</router-link>
+    <router-link to="/about">About</router-link>
+    <router-link to="/contact">Contact</router-link>
+    <router-view></router-view>
+  </div>
+</template>
+
+<script>
+export default {
+  name: 'App'
+}
+</script>
+
+<style>
+#app {
+  text-align: center;
+  color: #2c3e50;
+  margin-top: 60px;
+}
+</style>
